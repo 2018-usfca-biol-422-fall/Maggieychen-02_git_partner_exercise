@@ -31,7 +31,7 @@ echo "Extracting sequence counts from each of the files"
 grep ">" data/raw_data/animal_mRNA.fasta | wc -l > output/sequence_count_animal_mRNA.txt
 grep ">" data/raw_data/crab_mitochondrial_rRNA.fasta | wc -l > output/sequence_count_crab_rRNA.txt
 grep ">" data/raw_data/invertebrates_mRNA.fasta | wc -l > output/sequence_count_invertebrate_mRNA.txt
- grep ">" data/raw_data/plant_rRNA.fasta | wc -l > output/sequence_count_plant_rRNA.txt
+grep ">" data/raw_data/plant_rRNA.fasta | wc -l > output/sequence_count_plant_rRNA.txt
 
  #All done
  echo "all done!"
