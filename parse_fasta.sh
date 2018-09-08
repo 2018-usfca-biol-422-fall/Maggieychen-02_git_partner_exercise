@@ -9,11 +9,11 @@ echo "setting up directory structure"
 echo "code data data/raw_data output"
 mkdir code data data/raw_data output
 
-#Downloads the 4 zip files
+# Downloads the 4 zip files
 echo "Downloading the 4 zip files to data/raw_data directory...."
 curl -L https://npk.io/NB6Y5a+ -o data/raw_data/sequence_data.zip
 
-#unzip the files
+# unzip the files
 echo "Unizping the files to data/raw_data directory..... "
 unzip data/raw_data/sequence_data.zip -d data/raw_data/
 
@@ -33,5 +33,5 @@ grep ">" data/raw_data/crab_mitochondrial_rRNA.fasta | wc -l > output/sequence_c
 grep ">" data/raw_data/invertebrates_mRNA.fasta | wc -l > output/sequence_count_invertebrate_mRNA.txt
 grep ">" data/raw_data/plant_rRNA.fasta | wc -l > output/sequence_count_plant_rRNA.txt
 
- #All done
+ # All done
  echo "all done!"
